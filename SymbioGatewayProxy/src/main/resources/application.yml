@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: user
+    
+server:
+   port: 8080
+
+hystrix:
+  command:
+    myusers-service:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 15000
+
+
+kafkaservice:
+  ribbon:
+      eureka:
+        enabled: false
+      NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+      listOfServers: localhost:8001,localhost:8002
+      ServerListRefreshInterval: 15000
+      ConnectTimeout: 1000
+      ReadTimeout: 3000
+      MaxTotalHttpConnections: 500
+      MaxConnectionsPerHost: 100
+      
