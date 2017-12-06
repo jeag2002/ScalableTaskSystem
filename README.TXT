@@ -8,7 +8,11 @@ Spring Kafka
 Spring Netflix Ribbon
 Spring Netflix Hyxtrix
 
+
+
 Previous steps:
+
+How to create kafka server in windows https://dzone.com/articles/running-apache-kafka-on-windows-os
 
 1)Install kafka_2.12-1.0.0 in c:\workspaces\workEclipse\worksymbio\server\kafka_2.12-1.0.0
 2)Install zookeeper-3.4.10 in c:\workspaces\workEclipse\worksymbio\server\zookeeper-3.4.10
